@@ -53,11 +53,6 @@ a {
   font-family: inherit;
 }
 
-header {
-  height: 100vh;
-  color: var(--white);
-  overflow: hidden;
-}
 
 section {
   min-height: 100vh;
@@ -68,10 +63,10 @@ section {
   padding: 3rem 18rem;
 }
 
-/* .fa-3x:hover {
-
-
-} */
+.fa-3x:hover {
+  font-size: 3.5em;
+  color: var(--white);
+}
 
 /* .section {
   transform: translateY(-100%) scale(0);
