@@ -68,7 +68,12 @@ section {
   padding: 3rem 18rem;
 }
 
-.section {
+/* .fa-3x:hover {
+
+
+} */
+
+/* .section {
   transform: translateY(-100%) scale(0);
   transition: var(--animation);
   background-color: var(--black);
@@ -138,4 +143,4 @@ section {
   font-size: 1.2rem;
   color: var(--eggshell);
   pointer-events: none;
-}/*# sourceMappingURL=style.css.map */
+}# sourceMappingURL=style.css.map */
