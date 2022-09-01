@@ -58,8 +58,22 @@ a {
   color: var(--white);
 }
 
-@media screen and (max-width: 768px) {
-  h2 {
-    text-align: center;
+.italics {
+  font-style: italic;
+}
+
+p {
+  font-size: 16px;
+}
+
+@media (min-width: 576px) {
+  p {
+    font-size: 24px;
+  } 
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 32px;
   }
 }
