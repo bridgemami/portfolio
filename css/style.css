@@ -66,6 +66,14 @@ p {
   font-size: 16px;
 }
 
+.width-bar {
+  width: 85vw;
+}
+
+.bg-progress-bar {
+  background-color: var(--blue);
+}
+
 @media (min-width: 576px) {
   p {
     font-size: 24px;
