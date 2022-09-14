@@ -38,7 +38,10 @@
             <a class="nav-link" href="#projects">Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
              <a class="nav-link" href="resume_11_21.pdf" download>Resume <i class="fa-solid fa-file-arrow-down"></i></a>
@@ -56,14 +59,13 @@
   <main>
   <section class="container-fluid">
     <div class="row">
-    <picture class="col-12 col-sm-4 col-md-5 col-lg-6 order-0 rounded-circle rounded-5 justify-content-evenly my-3">
+    <picture class="col-12 offset-md-2 col-md-4  rounded-circle rounded-5 justify-content-evenly my-3">
       <source media="(min-width:720px)" srcset="./images/DSC06519-cropped_400px.webp" class="rounded-circle rounded-5">
       <!-- <source media="(min-width:360px)" srcset="./images/DSC06519-cropped_360px.jpg"> -->
       <img src="./images/DSC06519-cropped_300px.webp" alt="Headshot of Michael Bridgeman" class="rounded-circle rounded-5 mx-auto d-block"/>
     </picture>
-    <h2 class="col-12 col-sm-6 col-md-6 text-center order-sm-2 order-md-3 align-self-center align-items-center">Michael Bridgeman<br />Front-end Web Developer</h2>
-    <p class="col-12 col-sm-6 col-md-5 col-lg-6 order-sm-1 order-md-2 align-self-md-center ps-md-1 ">I am currently a student pursuing an associate degree in web full-stack development. When I am not coding, I enjoy hiking, running, yoga, traveling, and  <em>Star Wars</em>.</p>
-    <div class="col-12 col-md-2 d-none d-md-inline-flex col-md-1 order-md-1 d-lg-none"></div>
+    <h2 class="col-12 col-md-4 text-center align-self-center align-items-center">Michael Bridgeman<br />Front-end Web Developer</h2>
+    <div class="offset-md-2"></div>
   </div>
   </section>
   <section class="mt-5 container-fluid">
@@ -114,7 +116,7 @@
               <div class="pb-5">
                 <h4>SASS</h4>
                 <div class="progress width-bar">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 33.3%" role="progressbar" aria-label="Animated striped bar at 33.3%" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 50%" role="progressbar" aria-label="Animated striped bar at 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 </div>
       </div>
@@ -155,15 +157,16 @@
                 </div>
               </div>
             </div>
+            </div>
   </section>
   <section class="container-fluid">
     <div class="row">
       <h2 class="text-center col-12" id="projects">Projects</h2>
       </div>
-    <div class="row d-flex justify-content-center">
-      <h3 class="text-center col-12">HTML and CSS Projects</h3>
+    <div class="row d-flex justify-content-evenly">
+      <h3 class="text-center col-12 mb-3">HTML and CSS Projects</h3>
       <div class="card bg-dark" style="width: 18rem;">
-        <img src="./images/sites/dabbling-duck-blog.jpg" class="card-img-top" alt="The homepage for the dabbling duck blog">
+        <img src="./images/sites/dabbling-duck-blog.jpg" class="card-img-top" alt="The homepage for a dabbling duck blog">
         <div class="card-body">
           <h5 class="card-title">Dabbling Duck Blog</h5>
           <p class="card-text fs-14">I created a basic blog site about ducks using HTML and CSS</p>
@@ -171,14 +174,41 @@
         </div>
       </div>
       <div class="card bg-dark" style="width: 18rem;">
-        <img src="./images/sites/dabbling-duck-blog.jpg" class="card-img-top" alt="The homepage for the dabbling duck blog">
+        <img src="./images/sites/super-nintendo-blog.jpg" class="card-img-top" alt="The homepage for a Super Nintendo Blog" />
         <div class="card-body">
-          <h5 class="card-title">Dabbling Duck Blog</h5>
-          <p class="card-text fs-14">I created a basic blog site about ducks using HTML and CSS</p>
-          <a href="https://bridgemami.github.io/fun-with-ducks/" target="_blank" class="btn btn-primary bg-green border-green">Visit</a>
+          <h5 class="card-title">Super Nintendo Blog</h5>
+          <p class="card-text fs-14">I created a basic blog site about Super Nintendo using HTML and CSS</p>
+          <a href="https://bridgemami.github.io/theFinal/" target="_blank" class="btn btn-primary bg-green border-green">Visit</a>
         </div>
       </div>
     </div>
+    </section>
+    <article class="container-fluid">
+      <div class="row">
+        <h2 class="text-center col-12 my-3" id="about">About</h2>
+      </div>
+      <div class="row">
+      <p class="col-12 fs-20">I am currently a student pursuing an associate degree in web full-stack development. In addition, I have been taking classes at BitWise Industries. When I am not coding, I enjoy hiking, running, yoga, traveling, and  <em>Star Wars</em>.</p>
+      </div>
+    </article>
+    <section class="container-fluid">
+      <div class="row">
+        <h2 class="text-center col-12 my-3" id="contact">Contact</h2>
+        <p class="fs-20">Feel free to contact me, use any of the links on this page, or use the contact form below. I will get back to you as soon as possible. Thank you for taking the time to look at my portfolio.</p>
+      </div>
+      <div class="row">
+        <form action="https://formspree.io/f/mwkzlkra" method="POST">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" class="form-control" required> <br />
+                        <label for="name" class="form-label">Name:</label>   
+                        <input type="text" id="name" name="name" placeholder=" Name"  class="form-control"required> <br />
+                        <label for="subject" class="form-label">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control"><br />
+                        <label for="message" class="form-label">Message/Inquiry:</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Your message or inquiry"></textarea><br />
+                        <button type="submit" class="btn btn-success">Send</button>
+                      </form>
+      </div>
     </section>
   </main>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
