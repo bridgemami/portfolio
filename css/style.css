@@ -11,15 +11,27 @@ font-family: 'Noto Serif', serif;
 .Web-Developer-Funk-(Portfolio-Site)-4-hex { color: #BFBFBF; }
 .Web-Developer-Funk-(Portfolio-Site)-5-hex { color: #5DA676; }*/
 
+/* Color Theme Swatches in Hex 
+.Schroders-Web-1-hex { color: #CCCCCC; }
+.Schroders-Web-2-hex { color: #FF9900; }
+.Schroders-Web-3-hex { color: #003772; }
+.Schroders-Web-4-hex { color: #333333; }
+.Schroders-Web-5-hex { color: #008888; } */
+
+
+
 
 
 
 :root {
   --black: #0D0D0D;
+  --lightBlack: #333333;
   --white: #F2F2F2;
   --grey: #BFBFBF;
   --green: #5DA676;
-  --blue: #0583F2;
+  --purple: #3C2E8C;
+  --red: #FF1444;
+  --lightBlue: #0583F2;
   --sans: "Noto Sans", sans-serif;
   --serif: "Noto Serif", serif;
   --animation: all 4s ease-in-out;
