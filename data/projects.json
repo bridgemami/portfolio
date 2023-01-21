@@ -1,0 +1,28 @@
+{
+    "projects": [
+    {
+        "title": "Dabbling Duck Blog",
+        "image": "../../src/images/images/sites/dabbling-duck-blog.jpg",
+        "alt": "The homepage for a dabbling duck blog",
+        "link": "https://bridgemami.github.io/fun-with-ducks/",
+        "description": "A basic blog site about ducks using HTML and CSS.",
+        "id": 0
+    },
+    {
+        "title": "Super Nintendo Blog",
+        "image": "../src/images/sites/super-nintendo-blog.jpg",
+        "alt": "The homepage for a Super Nintendo Blog",
+        "link": "https://bridgemami.github.io/super_nintendo/",
+        "description": "A basic blog site about Super Nintendo using HTML and CSS.",
+        "id": 1
+    },
+    {
+        "title": "Grape Varietals Blog",
+        "image": "../src/images/sites/sites/grape-blog.jpg",
+        "alt": "The homepage for a grape varietals blog",
+        "link": "https://bridgemami.github.io/lets-talk-about-grapes/",
+        "description": "A responsive blog site about grape varietals using HTML and CSS.",
+        "id": 2
+    }
+    ]
+}

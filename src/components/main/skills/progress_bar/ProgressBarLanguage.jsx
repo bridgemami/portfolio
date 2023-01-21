@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProgressBar from '../../../../../../node_modules/react-bootstrap/ProgressBar';
+import ProgressBar from "react-bootstrap/esm/ProgressBar";
 // import s from '../progressbarwidth.module.css'
 
 export default function ProgressBarLanguage() {
@@ -40,17 +40,24 @@ export default function ProgressBarLanguage() {
       id: 6,
     },
   ]);
-        return(
-          <div className="pb-5 tab-content" id="pills-tabContent">
-        {languages.map((lang) =>{
-          console.log(lang.percent)
-          return(
-            <div key={lang.id} className="tab-pane fade show active" id="pills-languages" role="tabpanel" aria-labelledby="pills-languages-tab" tabIndex="0">
-          <h4>{lang.language}</h4>
-      
-           <ProgressBar animated now={lang.percent} />
-        {/* </div> */}
-        </div>
-      )})}
-      </div>)
+  return (
+    // <div className="pb-5 tab-content" id="pills-tabContent">
+    <div
+    // className="tab-pane fade show active"
+    id="languages-tabs"
+    role="tabpanel"
+    aria-labelledby="languages-tab"
+    tabIndex="0"
+  >  
+    {languages.map((lang) => {
+        console.log(lang.percent);
+        return (
+          <div key={lang.id}>
+            <h4>{lang.language}</h4>
+            <ProgressBar animated now={lang.percent} />
+         </div>
+        );
+      })}
+    </div>
+  );
 }
