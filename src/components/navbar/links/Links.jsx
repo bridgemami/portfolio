@@ -40,7 +40,7 @@ export default function Links () {
               className={`${s.font}`}
               aria-current="page"
               key={link.id}
-              href={`${link.href}`}
+              href={link.href}
             >
               {link.title}
             </Nav.Link>)})}
