@@ -2,6 +2,7 @@ import React from "react";
 import Jumbotron from "./jumbotron/Jumbotron";
 import Skills from "./skills/Skills";
 import Projects from "./projects/Projects";
+import About from "./about/About";
 // import s from './main.module.css'
 
 export default function Main() {
@@ -10,6 +11,7 @@ export default function Main() {
       <Jumbotron name="Michael Bridgeman" title="Front-end Web Developer" />
       <Skills />
       <Projects />
+      <About />
     </main>
   );
 }

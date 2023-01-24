@@ -1,15 +1,18 @@
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import image from "../../../../images/sites/super-nintendo-blog.jpg";
 
 export default function Project({ projects }) {
   return (
-        <div className="row justify-content-evenly">
-        {projects.map((project) => {
+     <div className="row justify-content-evenly">  
+    {projects.map(
+        (project) => {
         return (
           <Card style={{ width: "18rem" }} key={project.id}>
             <Card.Img
               variant="top"
-              src={`${project.image}`}
+                // src={project.image}
+              src={image}
               alt={`${project.alt}`}
             />
             {/* fix image link */}
