@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import projectData from './project/data/projects.json'
+import projectData from './data/projects.json'
 
 export default function Projects() {
   return (
