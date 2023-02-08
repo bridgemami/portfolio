@@ -24,9 +24,14 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Noto Sans', sans-serif;
   }
 
-  h1, h2, h3, h4, h5 {
+  h1, h2, h3 {
     color:  #F2F2F2;
     text-align: center;
+    font-family: 'Noto Serif', serif;
+  }
+
+  h4 {
+    color:  #F2F2F2;
     font-family: 'Noto Serif', serif;
   }
   

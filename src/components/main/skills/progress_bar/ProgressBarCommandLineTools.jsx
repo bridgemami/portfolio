@@ -2,6 +2,7 @@ import { useState } from "react";
 import ProgressBar from "react-bootstrap/esm/ProgressBar";
 // import s from '../progressbarwidth.module.css'
 
+
 export default function ProgressBarCommandLineTools() {
   const [commands, setCommands] = useState([
     {
@@ -27,7 +28,7 @@ export default function ProgressBarCommandLineTools() {
           <div
             key={command.id}
           >
-            <h4>{command.language}</h4>
+            <h5>{command.language}</h5>
 
             <ProgressBar animated now={command.percent} />
           </div>

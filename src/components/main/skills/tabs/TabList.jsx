@@ -2,7 +2,7 @@ import { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import s from "./tablist.module.css";
-import './tab.css'
+import './override.css'
 import ProgressBarApplications from "../progress_bar/ProgressBarApplications";
 import ProgressBarCommandLineTools from "../progress_bar/ProgressBarCommandLineTools";
 import ProgressBarFrameworks from "../progress_bar/ProgressBarFrameworks";
