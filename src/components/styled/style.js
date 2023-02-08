@@ -15,6 +15,8 @@ const StyledHeadingFont = styled.h2`
   text-align: center;
   color: #f2f2f2;
 `;
+
+
 const GlobalStyle = createGlobalStyle`
   p {
     color:  #F2F2F2;
