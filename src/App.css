@@ -14,21 +14,15 @@
   --animation: all 4s ease-in-out;
   --box-shadow-1: 0 3px 15 px rgba(0, 0, 0, 0.3);
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--serif);
-  color: var(--white);
-}
 
-a {
+
+
+/* a {
   display: inline-block;
   text-decoration: none;
   color: var(--red);
   font-family: inherit;
-}
-
-main {
-  background-color: var(--black);
-}
+} */
 
 @media (min-width: 576px) {
   p {

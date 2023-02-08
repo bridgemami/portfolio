@@ -1,9 +1,14 @@
-import s from './about.module.css';
-export default function About () {
-    return (
-        <section>
-            <h2 className={s.title}>About</h2>
-            <p className={s.paragraph}>I earned an associate degree in full-stack web development in December 2022 from Santa Rosa Junior College. In addition, I have been taking classes at BitWise Industries. When I am not coding, I enjoy hiking, running, yoga, traveling, and <em>Star Wars</em>.</p>
-        </section>
-    )
+// import { StyledParagraphFont } from "../../styled/style";
+export default function About() {
+  return (
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I earned an associate degree in full-stack web development in December
+        2022 from Santa Rosa Junior College. In addition, I have been taking
+        classes at BitWise Industries. When I am not coding, I enjoy hiking,
+        running, yoga, traveling, and <em>Star Wars</em>.
+      </p>
+    </section>
+  );
 }

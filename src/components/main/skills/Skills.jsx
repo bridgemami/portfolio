@@ -4,10 +4,8 @@ import Title from './title/Title';
 
 export default function Skills () {
     return (
-    <section className="mt-5 container-fluid">
-   <div className="row">
-    <Title title="My Skills" id="skills"/>
-    </div>
+    <section className="container">
+   <Title title="My Skills" id="skills"/>
     <div className="row">
     <TabList />
     </div>
