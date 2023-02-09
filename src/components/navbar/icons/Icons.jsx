@@ -15,7 +15,6 @@ export default function Icons() {
     {
       href: "https://www.linkedin.com/in/bridgemanmichael/",
       fontAwesome: faLinkedin,
-      middle: "s.middleIcon",
       id: 1,
     },
     {
@@ -36,7 +35,7 @@ export default function Icons() {
             key={icon.id}
           >
             <FontAwesomeIcon
-              className={`${s.faThreeX} ${icon.middle}`}
+              className={`${s.faThreeX} pe-3 pe-lg-0`}
               icon={icon.fontAwesome}
             />
           </Nav.Link>

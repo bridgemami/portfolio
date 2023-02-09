@@ -3,6 +3,8 @@ import styled, { createGlobalStyle } from "styled-components";
 const StyledFooter = styled.footer`
   background: #212529;
   color: white;
+  padding: 2vh 2vw;
+
 `;
 const StyledPar = styled.p`
   margin: 0 0 0 0 !important;
@@ -16,6 +18,20 @@ const StyledHeadingFont = styled.h2`
   color: #f2f2f2;
 `;
 
+const StyledForm = styled.div`
+display: flex;
+flex-direction: column;
+color: #f2f2f2;
+font-size: 1rem;
+`
+const StyledContactContainer = styled.section`
+padding-bottom: 15px;
+margin: 0 2vw;
+`
+const StyledAboutContainer =styled.section`
+padding-bottom: 15px;
+margin: 0 2vw;
+`
 
 const GlobalStyle = createGlobalStyle`
   p {
@@ -34,6 +50,11 @@ const GlobalStyle = createGlobalStyle`
     color:  #F2F2F2;
     font-family: 'Noto Serif', serif;
   }
+
+   input, textarea {
+    margin-bottom : 2vh;
+    max-width: 66.67%;
+  }
   
   // @media (min-width: 576px) {
   //   p {
@@ -47,4 +68,4 @@ const GlobalStyle = createGlobalStyle`
   //   }
 `;
 
-export { StyledFooter, StyledPar, StyledHeadingFont, GlobalStyle };
+export { StyledFooter, StyledPar, StyledHeadingFont, StyledForm, StyledAboutContainer, StyledContactContainer, GlobalStyle };

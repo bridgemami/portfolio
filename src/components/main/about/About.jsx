@@ -1,7 +1,7 @@
-// import { StyledParagraphFont } from "../../styled/style";
+import { StyledAboutContainer } from '../../styled/style';
 export default function About() {
   return (
-    <section id="about">
+    <StyledAboutContainer id="about">
       <h2>About</h2>
       <p>
         I earned an associate degree in full-stack web development in December
@@ -9,6 +9,6 @@ export default function About() {
         classes at BitWise Industries. When I am not coding, I enjoy hiking,
         running, yoga, traveling, and <em>Star Wars</em>.
       </p>
-    </section>
+    </StyledAboutContainer>
   );
 }

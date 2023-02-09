@@ -1,6 +1,9 @@
 import { useState } from "react";
+import Button from 'react-bootstrap/Button';
 import { useForm, ValidationError } from "@formspree/react";
 // import { StyledParagraphFont } from "../../styled/style";
+import { StyledForm, StyledContactContainer } from "../../styled/style";
+import './override.css'
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -13,7 +16,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact">
+    <StyledContactContainer id="contact">
       <h2>Contact</h2>
       <p>
         Feel free to contact me, use any of the links on this page, or use the
@@ -21,12 +24,13 @@ export default function Contact() {
         you for taking the time to look at my portfolio.
       </p>
       <form onSubmit={handleSubmit}>
+        <StyledForm>
         <label htmlFor="email">Email:</label>
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="email"
+          placeholder="Email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -37,7 +41,7 @@ export default function Contact() {
           type="text"
           id="name"
           name="name"
-          placeholder="name"
+          placeholder="Name"
           // required
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -48,7 +52,7 @@ export default function Contact() {
           type="text"
           name="subject"
           id="subject"
-          placeholder="subject"
+          placeholder="Subject"
           // required
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
@@ -72,14 +76,15 @@ export default function Contact() {
           field="message"
           errors={state.errors}
         />
-        <button type="submit" disabled={state.submitting}>
+        <Button type="submit" disabled={state.submitting}>
           Submit
-        </button>
+        </Button>
+        </StyledForm>
       </form>
       <p>{email}</p>
       <p>{name}</p>
       <p>{subject}</p>
       <p>{message}</p>
-    </section>
+    </StyledContactContainer>
   );
 }
