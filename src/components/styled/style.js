@@ -24,6 +24,15 @@ flex-direction: column;
 color: #f2f2f2;
 font-size: 1rem;
 `
+const StyledThanks =styled.p`
+color: #f2f2f2;
+font-size: 1.2rem;
+font-weight: bold;
+padding-bottom: 15px;
+margin: 0 2vw;
+text-align: center;
+`
+
 const StyledContactContainer = styled.section`
 padding-bottom: 15px;
 margin: 0 2vw;
@@ -68,4 +77,4 @@ const GlobalStyle = createGlobalStyle`
   //   }
 `;
 
-export { StyledFooter, StyledPar, StyledHeadingFont, StyledForm, StyledAboutContainer, StyledContactContainer, GlobalStyle };
+export { StyledFooter, StyledPar, StyledHeadingFont, StyledForm, StyledAboutContainer, StyledContactContainer, StyledThanks, GlobalStyle };

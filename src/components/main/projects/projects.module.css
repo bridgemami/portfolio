@@ -56,7 +56,8 @@ a {
 }
 
 .buttonColor {
-  background: var(--red) !important;
+  /* background: var(--red) !important; */
+  background: #A30021 !important;
   color: var(--white) !important;
 }
 

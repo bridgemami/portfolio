@@ -28,7 +28,7 @@ export default function ProgressBarCommandLineTools() {
           <div
             key={command.id}
           >
-            <h5>{command.language}</h5>
+            <h4>{command.language}</h4>
 
             <ProgressBar animated now={command.percent} />
           </div>

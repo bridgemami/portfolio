@@ -17,7 +17,9 @@ nav {
 }
 .faThreeX {
     font-size: 3rem;
-    color: var(--red);
+    /* color: var(--red); */
+    color:  #A30021;
+
 }
 
 .faThreeX:hover {

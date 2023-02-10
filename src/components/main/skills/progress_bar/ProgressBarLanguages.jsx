@@ -3,7 +3,7 @@ import ProgressBar from "react-bootstrap/esm/ProgressBar";
 // import s from '../progressbarwidth.module.css'
 
 
-export default function ProgressBarLanguage() {
+export default function ProgressBarLanguages() {
   const [languages, setLanguages] = useState([
     {
       language: "HTML",

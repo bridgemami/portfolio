@@ -10,16 +10,19 @@ export default function Icons() {
     {
       href: "https://github.com/bridgemami",
       fontAwesome: faGithub,
+      site: "GitHub Link",
       id: 0,
     },
     {
       href: "https://www.linkedin.com/in/bridgemanmichael/",
       fontAwesome: faLinkedin,
+      site: "LinkedIn Link",
       id: 1,
     },
     {
       href: "mailto:mdbridgeman@gmail.com",
       fontAwesome: faEnvelope,
+      site: "Email Link",
       id: 2,
     },
   ]);
@@ -33,10 +36,12 @@ export default function Icons() {
             target="_blank"
             rel="noreferrer"
             key={icon.id}
+            aria-label={`link to ${icon.site}`}
           >
             <FontAwesomeIcon
               className={`${s.faThreeX} pe-3 pe-lg-0`}
               icon={icon.fontAwesome}
+              // aria-labelledby={`link to ${icon.site}`}
             />
           </Nav.Link>
         );

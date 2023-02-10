@@ -2,14 +2,41 @@ import { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import s from "./tablist.module.css";
-import './override.css'
+import "./override.css";
 import ProgressBarApplications from "../progress_bar/ProgressBarApplications";
 import ProgressBarCommandLineTools from "../progress_bar/ProgressBarCommandLineTools";
 import ProgressBarFrameworks from "../progress_bar/ProgressBarFrameworks";
-import ProgressBarLanguage from "../progress_bar/ProgressBarLanguage";
+import ProgressBarLanguages from "../progress_bar/ProgressBarLanguages";
 
 export default function TabList() {
   const [key, setKey] = useState("languages");
+  const [skills, setSkills] = useState([
+    { title: "Languages", 
+    bar: <ProgressBarLanguages />, 
+    id: "languages",
+    pin: 1, },
+
+    {
+      title: "Frameworks/Libraries",
+      bar: <ProgressBarFrameworks />,
+      id: "frameworks",
+      pin: 2,
+    },
+
+    {
+      title: "Applications",
+      bar: <ProgressBarApplications />,
+      id: "applications",
+      pin: 3,
+    },
+
+    {
+      title: "Command Line Tools",
+      bar: <ProgressBarCommandLineTools />,
+      id: "commandLineTools",
+      pin: 4,
+    },
+  ]);
   return (
     <Tabs
       active={key}
@@ -18,27 +45,16 @@ export default function TabList() {
       className={`mb-3 ${s.white}`}
       justify
       variant="pills"
+      aria-describedby="Skills tab"
     >
-      <Tab eventKey="languages" title="Languages" tabClassName={s.white}>
-        <ProgressBarLanguage />
-      </Tab>
-      <Tab
-        eventKey="frameworks"
-        title="Frameworks/Libraries"
-        tabClassName={s.white}
-      >
-        <ProgressBarFrameworks />
-      </Tab>
-      <Tab eventKey="application" title="Applications" tabClassName={s.white}>
-        <ProgressBarApplications />
-      </Tab>
-      <Tab
-        eventKey="commandLineTools"
-        title="Command Line Tools"
-        tabClassName={s.white}
-      >
-        <ProgressBarCommandLineTools />
-      </Tab>
+      {skills.map((skill) => {
+        return (
+          <Tab eventKey={skill.id} title={skill.title} tabClassName={s.white} key={skill.pin} 
+          role="tabpanel">
+            {skill.bar}
+          </Tab>
+        );
+      })}
     </Tabs>
   );
 }
