@@ -1,241 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-  <meta name="description" content="Michael Bridgeman's Portfolio">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Michael Bridgeman">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Michael Bridgeman Portfolio</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<link href="./css/style.css" rel="stylesheet" type="text/css" /> 
-<link rel="icon" type="image/x-icon" href="./images/michaelCropXSmall.png" />
-<script src="https://kit.fontawesome.com/e2b41dab5f.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <!--Nav Bar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <!--logo-->
-      <a class="navbar-brand" href="index.html">
-       <img src="./images/michaelCrop_no_background_100px.png" alt="Michael Bridgeman Logo" />
-      </a>
-      <!--hamburger icon-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <!--Nav Items-->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-             <a class="nav-link" href="Resume_10_22.pdf" download>Resume <i class="fa-solid fa-file-arrow-down"></i></a>
-           </li>
-        </ul>
-        <!--contact nav-->
-  <div class= "ms-auto p-2">
-          <a href="https://github.com/bridgemami" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
-          <a href="https://www.linkedin.com/in/bridgemanmichael/" target="_blank"><i class="fa-brands fa-linkedin fa-3x px-3"></i></a>
-          <a href="mailto:mdbridgeman@gmail.com"><i class="fa fa-envelope-o rotate fa-3x"></i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Michael Bridgeman's Portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Michael Bridgeman" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Michael Bridgeman Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/overide.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/michaelCropXSmall.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/e2b41dab5f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!--logo-->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./images/michaelCrop_no_background_100px.png"
+            alt="Michael Bridgeman Logo"
+          />
+        </a>
+        <!--hamburger icon-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!--Nav Items-->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Resume_10_22.pdf" download
+                >Resume <i class="fa-solid fa-file-arrow-down"></i
+              ></a>
+            </li>
+          </ul>
+          <!--contact nav-->
+          <div class="ms-auto p-2">
+            <a href="https://github.com/bridgemami" target="_blank"
+              ><i class="fa-brands fa-github fa-3x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/bridgemanmichael/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin fa-3x px-3"></i
+            ></a>
+            <a href="mailto:mdbridgeman@gmail.com"
+              ><i class="fa fa-envelope-o rotate fa-3x"></i
+            ></a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <main>
-  <section class="container-fluid">
-    <div class="row">
-    <picture class="col-12 offset-md-2 col-md-4  rounded-circle rounded-5 justify-content-evenly my-3">
-      <source media="(min-width:720px)" srcset="./images/DSC06519-cropped_400px.webp" class="rounded-circle rounded-5">
-      <!-- <source media="(min-width:360px)" srcset="./images/DSC06519-cropped_360px.jpg"> -->
-      <img src="./images/DSC06519-cropped_300px.webp" alt="Headshot of Michael Bridgeman" class="rounded-circle rounded-5 mx-auto d-block"/>
-    </picture>
-    <h2 class="col-12 col-md-4 text-center align-self-center align-items-center">Michael Bridgeman<br />Front-end Web Developer</h2>
-    <div class="offset-md-2"></div>
-  </div>
-  </section>
-  <section class="mt-5 container-fluid">
-    <div class="row">
-      <h2 class="py-4 text-center" id="skills">My Skills</h2>
-    </div>
-    <div class="row">
-    <ul class="nav nav-pills mb- justify-content-evenly" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-languages-tab" data-bs-toggle="pill" data-bs-target="#pills-languages" type="button" role="tab" aria-controls="pills-languages" aria-selected="true">Languages</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-frameworks-tab" data-bs-toggle="pill" data-bs-target="#pills-frameworks" type="button" role="tab" aria-controls="pills-frameworks" aria-selected="false">Frameworks/Libraries</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-application-tab" data-bs-toggle="pill" data-bs-target="#pills-application" type="button" role="tab" aria-controls="pills-application" aria-selected="false">Application</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-cl-tab" data-bs-toggle="pill" data-bs-target="#pills-cl" type="button" role="tab" aria-controls="pills-cl" aria-selected="false">Command Line Tools</button>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-languages" role="tabpanel" aria-labelledby="pills-languages-tab" tabindex="0">
-        <div class="pb-5">
-          <h4>HTML</h4>
-          <div class="progress width-bar">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 90%" role="progressbar" aria-label="Animated striped bar at 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          </div>
-          <div class="pb-5">
-            <h4>CSS</h4>
-            <div class="progress width-bar">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 90%" role="progressbar" aria-label="Animated striped bar at 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            </div>
-            <div class="pb-5">
-              <h4>JSON</h4>
-              <div class="progress width-bar">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 90%" role="progressbar" aria-label="Animated striped bar at 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+    </nav>
+    <main>
+      <section class="container-fluid">
+        <div class="row">
+          <picture
+            class="col-12 offset-md-2 col-md-4 rounded-circle rounded-5 justify-content-evenly my-3"
+          >
+            <source
+              media="(min-width:720px)"
+              srcset="./images/DSC06519-cropped_400px.webp"
+              class="rounded-circle rounded-5"
+            />
+            <!-- <source media="(min-width:360px)" srcset="./images/DSC06519-cropped_360px.jpg"> -->
+            <img
+              src="./images/DSC06519-cropped_300px.webp"
+              alt="Headshot of Michael Bridgeman"
+              class="rounded-circle rounded-5 mx-auto d-block"
+            />
+          </picture>
+          <h2
+            class="col-12 col-md-4 text-center align-self-center align-items-center"
+          >
+            Michael Bridgeman<br />Front-end Web Developer
+          </h2>
+          <div class="offset-md-2"></div>
+        </div>
+      </section>
+      <section class="mt-5 container-fluid">
+        <div class="row">
+          <h2 class="py-4 text-center" id="skills">My Skills</h2>
+        </div>
+        <div class="row">
+          <ul
+            class="nav nav-pills mb-1 justify-content-evenly"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-languages-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-languages"
+                type="button"
+                role="tab"
+                aria-controls="pills-languages"
+                aria-selected="true"
+              >
+                Languages
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-frameworks-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-frameworks"
+                type="button"
+                role="tab"
+                aria-controls="pills-frameworks"
+                aria-selected="false"
+              >
+                Frameworks/Libraries
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-application-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-application"
+                type="button"
+                role="tab"
+                aria-controls="pills-application"
+                aria-selected="false"
+              >
+                Application
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-cl-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-cl"
+                type="button"
+                role="tab"
+                aria-controls="pills-cl"
+                aria-selected="false"
+              >
+                Command Line Tools
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-languages"
+              role="tabpanel"
+              aria-labelledby="pills-languages-tab"
+              tabindex="0"
+            >
+              <div class="pb-5">
+                <h4>HTML</h4>
+                <div class="progress width-bar">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar ninety"
+                    role="progressbar"
+                    aria-label="Animated striped bar at 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
+              <div class="pb-5">
+                <h4>CSS</h4>
+                <div class="progress width-bar">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar"
+                    style="width: 90%; background-color: red"
+                    role="progressbar"
+                    aria-label="Animated striped bar at 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
-            <div class="pb-5">
-              <h4>JavaScript</h4>
-              <div class="progress width-bar">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 50%" role="progressbar" aria-label="Animated striped bar at 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="pb-5">
+                <h4>JSON</h4>
+                <div class="progress width-bar">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar"
+                    style="width: 90%"
+                    role="progressbar"
+                    aria-label="Animated striped bar at 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
+              <div class="pb-5">
+                <h4>JavaScript</h4>
+                <div class="progress width-bar">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar"
+                    style="width: 50%"
+                    role="progressbar"
+                    aria-label="Animated striped bar at 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
               <div class="pb-5">
                 <h4>SASS</h4>
                 <div class="progress width-bar">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 50%" role="progressbar" aria-label="Animated striped bar at 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar"
+                    style="width: 50%"
+                    role="progressbar"
+                    aria-label="Animated striped bar at 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
-                </div>
-      </div>
-      <div class="tab-pane fade" id="pills-frameworks" role="tabpanel" aria-labelledby="pills-frameworks-tab" tabindex="0">
-        <div class="pb-5">
-          <h4>BootStrap 5</h4>
-          <div class="progress width-bar">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 90%" role="progressbar" aria-label="Animated striped bar at 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          </div>
-          <div class="pb-5">
-            <h4>React</h4>
-            <div class="progress width-bar">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 20%" role="progressbar" aria-label="Animated striped bar at 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            </div>
-      </div>
-      <div class="tab-pane fade" id="pills-application" role="tabpanel" aria-labelledby="pills-application-tab" tabindex="0">
-        <div class="pb-5">
-          <h4>WordPress</h4>
-          <div class="progress width-bar">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 80%" role="progressbar" aria-label="Animated striped bar at 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          </div> 
-          </div> 
-          <div class="tab-pane fade" id="pills-cl" role="tabpanel" aria-labelledby="pills-cl-tab" tabindex="0">
-            <div class="pb-5">
-              <h4>Git/Github</h4>
-              <div class="progress width-bar">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 67.7%" role="progressbar" aria-label="Animated striped bar at 67.7%" aria-valuenow="66.7" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-frameworks"
+              role="tabpanel"
+              aria-labelledby="pills-frameworks-tab"
+              tabindex="0"
+            >
+              <div class="pb-5">
+                <h4>BootStrap 5</h4>
+                <div class="progress width-bar">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar"
+                    style="width: 90%"
+                    role="progressbar"
+                    aria-label="Animated striped bar at 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="pb-5">
+                <h4>React</h4>
+                <div class="progress width-bar">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar"
+                    style="width: 20%"
+                    role="progressbar"
+                    aria-label="Animated striped bar at 20%"
+                    aria-valuenow="20"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-application"
+              role="tabpanel"
+              aria-labelledby="pills-application-tab"
+              tabindex="0"
+            >
+              <div class="pb-5">
+                <h4>WordPress</h4>
+                <div class="progress width-bar">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar"
+                    style="width: 80%"
+                    role="progressbar"
+                    aria-label="Animated striped bar at 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-cl"
+              role="tabpanel"
+              aria-labelledby="pills-cl-tab"
+              tabindex="0"
+            >
+              <div class="pb-5">
+                <h4>Git/Github</h4>
+                <div class="progress width-bar">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar"
+                    style="width: 67.7%"
+                    role="progressbar"
+                    aria-label="Animated striped bar at 67.7%"
+                    aria-valuenow="66.7"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
               <div class="pb-5">
                 <h4>NPM</h4>
                 <div class="progress width-bar">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar" style="width: 15%" role="progressbar" aria-label="Animated striped bar at 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-progress-bar"
+                    style="width: 15%"
+                    role="progressbar"
+                    aria-label="Animated striped bar at 15%"
+                    aria-valuenow="15"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="text-center col-12" id="projects">Projects</h2>
+        <div class="container-fluid">
+          <div class="row justify-content-evenly">
+            <!-- <div class="offset-3"> col-6 col-sm-6</div> -->
+            <div
+              class="card bg-dark pb-1 mx-4 mb-4 mb-md-4"
+              style="width: 18rem"
+            >
+              <a
+                href="https://bridgemami.github.io/fun-with-ducks/"
+                target="_blank"
+                ><img
+                  src="./images/sites/dabbling-duck-blog.jpg"
+                  class="card-img-top my-3 card-hover mb-3"
+                  alt="The homepage for a dabbling duck blog"
+              /></a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Dabbling Duck Blog</h5>
+                <p class="card-text fs-16">
+                  A basic blog site about ducks using HTML and CSS.
+                </p>
+                <a
+                  href="https://bridgemami.github.io/fun-with-ducks/"
+                  target="_blank"
+                  class="btn btn-primary bg-green border-green align-self-center"
+                  >Visit</a
+                >
+              </div>
             </div>
-  </section>
-  <section>
-      <h2 class="text-center col-12" id="projects">Projects</h2>
-      <div class="container-fluid">
-        <div class="row justify-content-evenly">
-          <!-- <div class="offset-3"> col-6 col-sm-6</div> -->
-      <div class="card bg-dark pb-1 mx-4 mb-4 mb-md-4" style="width: 18rem;">
-        <a href="https://bridgemami.github.io/fun-with-ducks/" target="_blank"><img src="./images/sites/dabbling-duck-blog.jpg" class="card-img-top my-3 card-hover mb-3" alt="The homepage for a dabbling duck blog"></a>
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">Dabbling Duck Blog</h5>
-          <p class="card-text fs-16">A basic blog site about ducks using HTML and CSS.</p>
-          <a href="https://bridgemami.github.io/fun-with-ducks/" target="_blank" class="btn btn-primary bg-green border-green align-self-center">Visit</a>
+            <!-- <div class="offset-3"></div> -->
+            <div
+              class="card bg-dark pb-1 mx-4 mb-4 mb-md-4"
+              style="width: 18rem"
+            >
+              <a
+                href="https://bridgemami.github.io/super_nintendo/"
+                target="_blank"
+                ><img
+                  src="./images/sites/super-nintendo-blog.jpg"
+                  class="card-img-top my-3 card-hover mb-3"
+                  alt="The homepage for a Super Nintendo Blog"
+              /></a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Super Nintendo Blog</h5>
+                <p class="card-text fs-16">
+                  A basic blog site about Super Nintendo using HTML and CSS.
+                </p>
+                <a
+                  href="https://bridgemami.github.io/super_nintendo/"
+                  target="_blank"
+                  class="btn btn-primary bg-green border-green align-self-center"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div
+              class="card bg-dark pb-1 mx-4 mb-4 mb-md-4"
+              style="width: 18rem"
+            >
+              <a
+                href="https://bridgemami.github.io/lets-talk-about-grapes/"
+                target="_blank"
+                ><img
+                  src="./images/sites/grape-blog.jpg"
+                  class="card-img-top my-3 card-hover mb-3"
+                  alt="The homepage for a grape varietals blog"
+              /></a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Grape Varietals Blog</h5>
+                <p class="card-text fs-16">
+                  A responsive blog site about grape varietals using HTML and
+                  CSS.
+                </p>
+                <a
+                  href="https://bridgemami.github.io/lets-talk-about-grapes/"
+                  target="_blank"
+                  class="btn btn-primary bg-green border-green align-self-center"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div
+              class="card bg-dark pb-1 mx-4 mb-4 mb-md-4"
+              style="width: 18rem"
+            >
+              <a href="https://bridgemami.github.io/yosemite/" target="_blank"
+                ><img
+                  src="./images/sites/yosemite.jpg"
+                  class="card-img-top my-3 card-hover mb-3"
+                  alt="The homepage for a grape varietals blog"
+              /></a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Yosemite Blog</h5>
+                <p class="card-text fs-16">
+                  A responsive blog site about grape Yosemite National Park
+                  using HTML, CSS and Bootstrap.
+                </p>
+                <a
+                  href="https://bridgemami.github.io/yosemite/"
+                  target="_blank"
+                  class="btn btn-primary bg-green border-green align-self-center"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div
+              class="card bg-dark pb-1 mx-4 mb-4 mb-md-4"
+              style="width: 18rem"
+            >
+              <a
+                href="https://dev-wines-of-the-south.pantheonsite.io/wines-of-the-south/"
+                target="_blank"
+                ><img
+                  src="./images/sites/region-blog.jpg"
+                  class="card-img-top my-3 card-hover mb-3"
+                  alt="The homepage for a grape varietals blog"
+              /></a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Wine Region Blog</h5>
+                <p class="card-text fs-16">
+                  I created a responsive blog site about southern hemisphere
+                  wine regions using WordPress.
+                </p>
+                <a
+                  href="https://dev-wines-of-the-south.pantheonsite.io/wines-of-the-south/"
+                  target="_blank"
+                  class="btn btn-primary bg-green border-green align-self-center"
+                  >Visit</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- <div class="offset-3"></div> -->
-      <div class="card bg-dark pb-1 mx-4 mb-4 mb-md-4" style="width: 18rem;">
-        <a href="https://bridgemami.github.io/super_nintendo/" target="_blank"><img src="./images/sites/super-nintendo-blog.jpg" class="card-img-top my-3 card-hover mb-3" alt="The homepage for a Super Nintendo Blog" /></a>
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">Super Nintendo Blog</h5>
-          <p class="card-text fs-16">A basic blog site about Super Nintendo using HTML and CSS.</p>
-          <a href="https://bridgemami.github.io/super_nintendo/" target="_blank" class="btn btn-primary bg-green border-green align-self-center">Visit</a>
+      </section>
+      <article class="container-fluid">
+        <div class="row">
+          <h2 class="text-center col-12 my-3" id="about">About</h2>
         </div>
-      </div>
-      <div class="card bg-dark  pb-1 mx-4 mb-4 mb-md-4" style="width: 18rem;">
-        <a href="https://bridgemami.github.io/lets-talk-about-grapes/" target="_blank"><img src="./images/sites/grape-blog.jpg" class="card-img-top my-3 card-hover mb-3" alt="The homepage for a grape varietals blog"></a>
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">Grape Varietals Blog</h5>
-          <p class="card-text fs-16">A responsive blog site about grape varietals using HTML and CSS.</p>
-          <a href="https://bridgemami.github.io/lets-talk-about-grapes/" target="_blank" class="btn btn-primary bg-green border-green align-self-center ">Visit</a>
+        <div class="row">
+          <p class="col-12 fs-20 px-4">
+            I am currently a student pursuing an associate degree in web
+            full-stack development. In addition, I have been taking classes at
+            BitWise Industries. When I am not coding, I enjoy hiking, running,
+            yoga, traveling, and <em>Star Wars</em>.
+          </p>
         </div>
-      </div>
-      <div class="card bg-dark pb-1 mx-4 mb-4 mb-md-4" style="width: 18rem;">
-        <a href="https://bridgemami.github.io/yosemite/" target="_blank"><img src="./images/sites/yosemite.jpg" class="card-img-top my-3 card-hover mb-3" alt="The homepage for a grape varietals blog"></a>
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">Yosemite Blog</h5>
-          <p class="card-text fs-16">A responsive blog site about grape Yosemite National Park using HTML, CSS and Bootstrap.</p>
-          <a href="https://bridgemami.github.io/yosemite/" target="_blank" class="btn btn-primary bg-green border-green align-self-center ">Visit</a>
+      </article>
+      <section class="container-fluid">
+        <div class="row">
+          <h2 class="text-center col-12 my-3" id="contact">Contact</h2>
+          <p class="col-12 fs-20 px-4">
+            Feel free to contact me, use any of the links on this page, or use
+            the contact form below. I will get back to you as soon as possible.
+            Thank you for taking the time to look at my portfolio.
+          </p>
         </div>
-      </div>
-      <div class="card bg-dark pb-1 mx-4 mb-4 mb-md-4" style="width: 18rem;">
-        <a href="https://dev-wines-of-the-south.pantheonsite.io/wines-of-the-south/" target="_blank"><img src="./images/sites/region-blog.jpg" class="card-img-top my-3 card-hover mb-3" alt="The homepage for a grape varietals blog"></a>
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">Wine Region Blog</h5>
-          <p class="card-text fs-16">I created a responsive blog site about southern hemisphere wine regions using WordPress.</p>
-          <a href="https://dev-wines-of-the-south.pantheonsite.io/wines-of-the-south/" target="_blank" class="btn btn-primary bg-green border-green align-self-center ">Visit</a>
+        <div class="row">
+          <form action="https://formspree.io/f/mwkzlkra" method="POST">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              class="form-control"
+              required
+            />
+            <br />
+            <label for="name" class="form-label">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder=" Name"
+              class="form-control"
+              required
+            />
+            <br />
+            <label for="subject" class="form-label">Subject:</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              class="form-control"
+            /><br />
+            <label for="message" class="form-label">Message/Inquiry:</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              placeholder="Your message or inquiry"
+            ></textarea
+            ><br />
+            <button type="submit" class="btn white border-green bg-green mb-5">Send</button>
+          </form>
         </div>
-      </div>
-    </div>
-    </div>
-    </section>
-    <article class="container-fluid">
-      <div class="row">
-        <h2 class="text-center col-12 my-3" id="about">About</h2>
-      </div>
-      <div class="row">
-      <p class="col-12 fs-20 px-4">I am currently a student pursuing an associate degree in web full-stack development. In addition, I have been taking classes at BitWise Industries. When I am not coding, I enjoy hiking, running, yoga, traveling, and  <em>Star Wars</em>.</p>
-      </div>
-    </article>
-    <section class="container-fluid">
-      <div class="row">
-        <h2 class="text-center col-12 my-3" id="contact">Contact</h2>
-        <p class="col-12 fs-20 px-4">Feel free to contact me, use any of the links on this page, or use the contact form below. I will get back to you as soon as possible. Thank you for taking the time to look at my portfolio.</p>
-      </div>
-      <div class="row">
-        <form action="https://formspree.io/f/mwkzlkra" method="POST">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Email" class="form-control" required> <br />
-                        <label for="name" class="form-label">Name:</label>   
-                        <input type="text" id="name" name="name" placeholder=" Name"  class="form-control" required> <br />
-                        <label for="subject" class="form-label">Subject:</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control"><br />
-                        <label for="message" class="form-label">Message/Inquiry:</label>
-                        <textarea id="message" name="message" class="form-control" placeholder="Your message or inquiry"></textarea><br />
-                        <button type="submit" class="btn btn-success mb-5">Send</button>
-                      </form>
-      </div>
-    </section>
-  </main>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

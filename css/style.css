@@ -30,7 +30,7 @@ font-family: 'Noto Serif', serif;
   --grey: #BFBFBF;
   --green: #5DA676;
   --purple: #3C2E8C;
-  --red: #FF1444;
+  --red: #A30021;
   --lightBlue: #0583F2;
   --sans: "Noto Sans", sans-serif;
   --serif: "Noto Serif", serif;
@@ -86,22 +86,28 @@ a {
   width: 85vw;
 }
 
-.bg-progress-bar {
-  background-color: var(--blue);
+.bg-progress-bar, .bg-green {
+  background-color: var(--red) !important;
 }
 
-.bg-green {
-  background-color: var(--green);
-}
 
 .border-green {
-  border-color: var(--green);
+  border-color: var(--red);
 }
 
 .card-hover:hover {
 width: 101%;
 height: 100.5%;
 
+}
+
+.white {
+  color: var(--white);
+}
+
+.ninety{
+  background-color: var(--red);
+  width: 90%;
 }
 @media (min-width: 576px) {
   p {
