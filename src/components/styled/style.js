@@ -4,7 +4,6 @@ const StyledFooter = styled.footer`
   background: #212529;
   color: white;
   padding: 2vh 2vw;
-
 `;
 const StyledPar = styled.p`
   margin: 0 0 0 0 !important;
@@ -19,28 +18,28 @@ const StyledHeadingFont = styled.h2`
 `;
 
 const StyledForm = styled.div`
-display: flex;
-flex-direction: column;
-color: #f2f2f2;
-font-size: 1rem;
-`
-const StyledThanks =styled.p`
-color: #f2f2f2;
-font-size: 1.2rem;
-font-weight: bold;
-padding-bottom: 15px;
-margin: 0 2vw;
-text-align: center;
-`
+  display: flex;
+  flex-direction: column;
+  color: #f2f2f2;
+  font-size: 1rem;
+`;
+const StyledThanks = styled.p`
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+  margin: 0 2vw;
+  text-align: center;
+`;
 
 const StyledContactContainer = styled.section`
-padding-bottom: 15px;
-margin: 0 2vw;
-`
-const StyledAboutContainer =styled.section`
-padding-bottom: 15px;
-margin: 0 2vw;
-`
+  padding-bottom: 15px;
+  margin: 0 2vw;
+`;
+const StyledAboutContainer = styled.section`
+  padding-bottom: 15px;
+  margin: 0 2vw;
+`;
 
 const GlobalStyle = createGlobalStyle`
   p {
@@ -77,4 +76,13 @@ const GlobalStyle = createGlobalStyle`
   //   }
 `;
 
-export { StyledFooter, StyledPar, StyledHeadingFont, StyledForm, StyledAboutContainer, StyledContactContainer, StyledThanks, GlobalStyle };
+export {
+  StyledFooter,
+  StyledPar,
+  StyledHeadingFont,
+  StyledForm,
+  StyledAboutContainer,
+  StyledContactContainer,
+  StyledThanks,
+  GlobalStyle,
+};

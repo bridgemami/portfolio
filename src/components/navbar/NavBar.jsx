@@ -3,6 +3,7 @@ import Navbar from "../../../node_modules/react-bootstrap/Navbar";
 import Brand from "./brand/Brand";
 import Links from "./links/Links";
 import Icons from "./icons/Icons";
+import './override.css'
 // import style from "./navbar.module.css";
 
 export default function NavBar() {
