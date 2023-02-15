@@ -11,10 +11,12 @@ import ProgressBarLanguages from "../progress_bar/ProgressBarLanguages";
 export default function TabList() {
   const [key, setKey] = useState("languages");
   const [skills, setSkills] = useState([
-    { title: "Languages", 
-    bar: <ProgressBarLanguages />, 
-    id: "languages",
-    pin: 1, },
+    {
+      title: "Languages",
+      bar: <ProgressBarLanguages />,
+      id: "languages",
+      pin: 1,
+    },
 
     {
       title: "Frameworks/Libraries",
@@ -47,10 +49,15 @@ export default function TabList() {
       variant="pills"
       aria-describedby="Skills tab"
     >
-      {skills.map((skill) => {
+      {skills && skills.map((skill) => {
         return (
-          <Tab eventKey={skill.id} title={skill.title} tabClassName={s.white} key={skill.pin} 
-          role="tabpanel">
+          <Tab
+            eventKey={skill.id}
+            title={skill.title}
+            tabClassName={s.white}
+            key={skill.pin}
+            role="tabpanel"
+          >
             {skill.bar}
           </Tab>
         );

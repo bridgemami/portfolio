@@ -19,11 +19,15 @@
   background-color:  var(--lightBlack) !important;
   margin-bottom: 5vh;
   width: 18rem !important;
+  display: flex !important;
+  justify-content: space-evenly !important;
 }
 
 .image {
   margin: 1vh 0 0 0;
   border-radius: 5px;
+  width: 262.4px !important;
+  height: 145px !important;
 }
 .body {
   color: var(--white);
@@ -75,4 +79,9 @@ a {
 
 .heading {
 margin: 3vh 0;
+}
+
+a {
+  color: var(--white) !important;
+  font-weight: bold !important;
 }
