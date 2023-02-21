@@ -27,6 +27,7 @@ export default function ProjectList() {
                   <Card.Title className={s.title}>{data.title}</Card.Title>
                 </a>
                 <Card.Text className={s.text}>{data.description}</Card.Text>
+                <Card.Text className={s.text}>{data.category}</Card.Text>
                 <div className={s.button}>
                   <Button
                     variant="link"
